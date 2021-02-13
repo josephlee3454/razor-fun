@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- html/head tags removed for brevity -->
+<body>
+    @{
+        var StringList = new List<string>
+        {
+            "Apple Pie",
+            "Burritos",
+            "Clams Casino",
+            "Donuts"
+         };
+            
+        foreach(var word in StringList)
+        {
+            if (word.Contains('C')) { ///this is the bonus if i wanted the whole list i would take it out
+
+                <p>@word</p>
+
+            
+
+            }
+            // We can render HTML from within C# code!
+        }
+    }
+    </body>
+</html>
